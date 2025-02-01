@@ -1,27 +1,27 @@
 // Smooth Scrolling for Navigation
-let navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
-let interval;
+// let navMenuAnchorTags = document.querySelectorAll('.nav-menu a');
+// let interval;
 
-for (let i = 0; i < navMenuAnchorTags.length; i++) {
-  navMenuAnchorTags[i].addEventListener('click', function (event) {
-    event.preventDefault();
-    let targetSectionID = this.textContent.trim().toLowerCase();
-    let targetSection = document.getElementById(targetSectionID);
+// for (let i = 0; i < navMenuAnchorTags.length; i++) {
+//   navMenuAnchorTags[i].addEventListener('click', function (event) {
+//     event.preventDefault();
+//     let targetSectionID = this.textContent.trim().toLowerCase();
+//     let targetSection = document.getElementById(targetSectionID);
 
-    interval = setInterval(function () {
-      scrollVertically(targetSection);
-    }, 2);
-  });
-}
+//     interval = setInterval(function () {
+//       scrollVertically(targetSection);
+//     }, 2);
+//   });
+// }
 
-function scrollVertically(targetSection) {
-  let targetSectionCoordinates = targetSection.getBoundingClientRect();
-  if (targetSectionCoordinates.top <= 0) {
-    clearInterval(interval);
-    return;
-  }
-  window.scrollBy(0, 300);
-}
+// function scrollVertically(targetSection) {
+//   let targetSectionCoordinates = targetSection.getBoundingClientRect();
+//   if (targetSectionCoordinates.top <= 0) {
+//     clearInterval(interval);
+//     return;
+//   }
+//   window.scrollBy(0, 300);
+// }
 
 // Skill Bars Animation
 let progressBars = document.querySelectorAll('.skill-progress > div');
