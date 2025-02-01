@@ -87,3 +87,8 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+ document.querySelector("#contact-btn").addEventListener('click',(e)=>{
+ alert("Message sent Successfully.")
+  })
+  
