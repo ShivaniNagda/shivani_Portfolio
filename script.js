@@ -20,7 +20,7 @@ function scrollVertically(targetSection) {
     clearInterval(interval);
     return;
   }
-  window.scrollBy(0, 200);
+  window.scrollBy(0, 300);
 }
 
 // Skill Bars Animation
