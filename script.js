@@ -10,7 +10,7 @@ for (let i = 0; i < navMenuAnchorTags.length; i++) {
 
     interval = setInterval(function () {
       scrollVertically(targetSection);
-    }, 20);
+    }, 2);
   });
 }
 
