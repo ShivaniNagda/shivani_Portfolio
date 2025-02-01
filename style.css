@@ -8,6 +8,8 @@ html {
  
 }
 :root{
+  --primary-color: #3498db;
+  box-sizing: border-box;
   --bg-body-color:#26333a;
   margin: 0px !important;
   padding: 0px !important;
@@ -18,9 +20,9 @@ html {
 }
 body {
   background-color: var(--bg-body-color);
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  
+  box-sizing: border-box;
 }
 
 
@@ -928,6 +930,7 @@ font-size: 1rem;
 .footer{
   background-color: hwb(120 26% 73%);
   /* padding: 10px; */
+  box-sizing: border-box;
   box-shadow:inset 0px 2px 6px 2px rgb(199, 199, 195);
  
 }
@@ -942,8 +945,9 @@ font-size: 1rem;
   box-sizing: border-box;
   border: 2px solid #26333a;
   /* box-shadow:1px 1px 1px 3px #6e8d9e; */
-  
-  padding-bottom: 10px;
+  box-sizing: border-box;
+  /* padding-bottom: 10px; */
+  align-items: center;
 }
 @media only screen and (max-width : 600px){
   .copyright{
