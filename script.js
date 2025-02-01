@@ -20,7 +20,7 @@ function scrollVertically(targetSection) {
     clearInterval(interval);
     return;
   }
-  window.scrollBy(0, 50);
+  window.scrollBy(0, 200);
 }
 
 // Skill Bars Animation
@@ -87,7 +87,7 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
-
+// Contact Section
  document.querySelector("#contact-btn").addEventListener('click',(e)=>{
  alert("Message sent Successfully.")
   })
